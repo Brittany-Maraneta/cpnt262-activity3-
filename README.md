@@ -9,4 +9,6 @@
 
 ## Code Journal
 
-My main take away is that this assignment I felt a lot more prepared compared to the last one. Only because the in class activity we did with our scrum group really helped me use examples and look through ways of how to do small simpler tasks that I could put in with this assignment. I didn't really understand type=“module” so I had to ask but also compare and contrast what would happen if I use one way or another.
+My main take away is that this assignment I felt a lot more prepared compared to the last one. Only because the in class activity we did with our scrum group really helped me use examples and look through ways of how to do small simpler tasks that I could put in with this assignment. I didn't really understand type=“module” so I had to ask but also compare and contrast what would happen if I use one way or another. Once I changed over to type="module" I also broke it a few times so having to do a lot of research on Mozilla, W3Schools, literally the whole internet to figure out why it wasn't connecting. I eventually figured out and asked around from peers that I had to revise my current functions for it to be called better.
+
+Solving code again was all about taking it slow and trying not to give up. JS can be so frustrating, that times I just wanted to quit. But I remembered to reach out to my peers this time and read EVERY detail of articles to understand the whys behind everything.
