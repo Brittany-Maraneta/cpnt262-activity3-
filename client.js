@@ -7,7 +7,7 @@ function displayCredentials(username, password) {
   )}`;
 }
 
-// Function to remove white space and capitalize username
+//Remove white space and capitalize username
 function removeSpacesAndCapitalize() {
   let usernameInput = document
     .getElementById("myText")
