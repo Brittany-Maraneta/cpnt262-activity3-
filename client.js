@@ -7,18 +7,22 @@ function displayCredentials(username, password) {
   )}`;
 }
 
-//Remove white space and capitalize username
+// Remove white space and capitalize username
 function removeSpacesAndCapitalize() {
   let usernameInput = document
     .getElementById("myText")
     .value.toUpperCase()
-
-    //Text after
     .replace(/\s/g, "");
   let passwordInput = document.getElementById("password").value.trim();
 
-  //after
-  displayCredentials(usernameInput, passwordInput);
+  // console error
+  let userText = /\d/.test(usernameInput);
+
+  if (userText) {
+    console.error("No numbers allowed in username!");
+  } else {
+    displayCredentials(usernameInput, passwordInput);
+  }
 }
 
 document
