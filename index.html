@@ -7,14 +7,19 @@
     <title>Activity3</title>
   </head>
   <body>
-    <script src="client.js" defer></script>
+    <script src="client.js" type="module"></script>
     <h1 class="a">CPNT 262- Activity 3: Control Flows and Error Handling</h1>
     <div class="container">
-      <h2>Hello! Enter a long username!</h2>
-
-      <input type="text" id="myText" value="..." />
-
-      <button class="a" onclick="removeSpacesAndCapitalize()">Enter</button>
+      <h2 class="a">
+        Hello! Welcome to your new account, to start please provide a username
+        and password! Make sure your username is long!
+        <br />
+      </h2>
+      <input type="text" id="myText" placeholder="Username..." />
+      <br />
+      <input type="Password" id="password" placeholder="password..." />
+      <br />
+      <button class="a" id="enterButton">Enter</button>
       <p id="text" class="textBox"></p>
     </div>
   </body>

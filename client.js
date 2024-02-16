@@ -1,26 +1,26 @@
-//text box
-function textBox() {
-  let box = document.getElementById("myText").value;
-  document.getElementById("text").innerHTML = box;
+// text boxes
+function displayCredentials(username, password) {
+  document.getElementById(
+    "text"
+  ).innerHTML = `Username: ${username}<br>Password: ${"*".repeat(
+    password.length
+  )}`;
 }
 
-// removing white space and adding capitals
+// Function to remove white space and capitalize username
 function removeSpacesAndCapitalize() {
-  let input = document.getElementById("myText");
-  let inputValue = input.value;
+  let usernameInput = document
+    .getElementById("myText")
+    .value.toUpperCase()
 
-  inputValue = inputValue.replace(/\b\w/g, function (char) {
-    return char.toUpperCase();
-  });
+    //Text after
+    .replace(/\s/g, "");
+  let passwordInput = document.getElementById("password").value.trim();
 
-  //your text box after
-  input.value = inputValue.replace(/\s/g, "");
-  textBox();
+  //after
+  displayCredentials(usernameInput, passwordInput);
 }
 
-function removePlaceholder() {
-  let input = document.getElementById("myText");
-  if (input.value === "...") {
-    input.value = "";
-  }
-}
+document
+  .getElementById("enterButton")
+  .addEventListener("click", removeSpacesAndCapitalize);
